@@ -1,0 +1,146 @@
+{
+  "api": "/api/banner",
+  "banners":[
+    {
+      "typeTitle":"新歌首发",
+      "encodeId":"551970345",
+      "adid":null,
+      "imageUrl":"http://p4.music.126.net/_mnhchD7js6p-6AOF5CzVg==/109951163244349784.jpg",
+      "titleColor":"red",
+      "targetType":1,
+      "url":null,
+      "targetId":551970345,
+      "exclusive":false,
+      "monitorClick":null,
+      "monitorImpress":null,
+      "monitorType":null,
+      "monitorClickList":[
+
+      ],
+      "monitorImpressList":[
+
+      ]
+    },
+    {
+      "typeTitle":"独家",
+      "encodeId":"547969202",
+      "adid":null,
+      "imageUrl":"http://p3.music.126.net/-4V2IrO3qWuTHhv16wb_bg==/109951163244353726.jpg",
+      "titleColor":"red",
+      "targetType":1,
+      "url":null,
+      "targetId":547969202,
+      "exclusive":false,
+      "monitorClick":null,
+      "monitorImpress":null,
+      "monitorType":null,
+      "monitorClickList":[
+
+      ],
+      "monitorImpressList":[
+
+      ]
+    },
+    {
+      "typeTitle":"独家",
+      "encodeId":"38033689",
+      "adid":null,
+      "imageUrl":"http://p4.music.126.net/qu2iXObCA61NpKNDma-4AA==/109951163243184359.jpg",
+      "titleColor":"red",
+      "targetType":10,
+      "url":"",
+      "targetId":38033689,
+      "exclusive":false,
+      "monitorClick":null,
+      "monitorImpress":null,
+      "monitorType":null,
+      "monitorClickList":[
+
+      ],
+      "monitorImpressList":[
+
+      ]
+    },
+    {
+      "typeTitle":"新歌首发",
+      "encodeId":"551816010",
+      "adid":null,
+      "imageUrl":"http://p4.music.126.net/4D7YW4KltgfZosipkk1T7g==/109951163240776589.jpg",
+      "titleColor":"red",
+      "targetType":1,
+      "url":"",
+      "targetId":551816010,
+      "exclusive":false,
+      "monitorClick":null,
+      "monitorImpress":null,
+      "monitorType":null,
+      "monitorClickList":[
+
+      ],
+      "monitorImpressList":[
+
+      ]
+    },
+    {
+      "typeTitle":"独家",
+      "encodeId":"38273118",
+      "adid":null,
+      "imageUrl":"http://p4.music.126.net/pba0QZ5DoUI0LTZusWX6xA==/109951163244356330.jpg",
+      "titleColor":"red",
+      "targetType":10,
+      "url":"",
+      "targetId":38273118,
+      "exclusive":false,
+      "monitorClick":null,
+      "monitorImpress":null,
+      "monitorType":null,
+      "monitorClickList":[
+
+      ],
+      "monitorImpressList":[
+
+      ]
+    },
+    {
+      "typeTitle":"独家",
+      "encodeId":"549304202",
+      "adid":null,
+      "imageUrl":"http://p3.music.126.net/Cr7FmLB-v7CIJZt7YX30hw==/109951163242920789.jpg",
+      "titleColor":"red",
+      "targetType":1,
+      "url":null,
+      "targetId":549304202,
+      "exclusive":false,
+      "monitorClick":null,
+      "monitorImpress":null,
+      "monitorType":null,
+      "monitorClickList":[
+
+      ],
+      "monitorImpressList":[
+
+      ]
+    },
+    {
+      "typeTitle":"独家专访",
+      "encodeId":"5888060",
+      "adid":null,
+      "imageUrl":"http://p3.music.126.net/8u9Hw6bUrKxWN-Do7yX3XQ==/109951163242903597.jpg",
+      "titleColor":"red",
+      "targetType":1004,
+      "url":"",
+      "targetId":5888060,
+      "exclusive":false,
+      "monitorClick":null,
+      "monitorImpress":null,
+      "monitorType":null,
+      "monitorClickList":[
+
+      ],
+      "monitorImpressList":[
+
+      ]
+    }
+  ],
+  "code":200
+}

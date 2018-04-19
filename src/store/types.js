@@ -1,0 +1,7 @@
+/**
+ * mutation type
+ **/
+
+export default {
+
+}
