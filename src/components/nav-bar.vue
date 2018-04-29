@@ -53,6 +53,8 @@
 <script>
   import Vue from 'vue'
 
+
+
   let component = {
     data: () => ({
       showPlaceholder: true,
@@ -286,7 +288,7 @@
     }
 
     .nav-login-item {
-        > a {
+       &>a {
             @include link-color;
             &:hover {
                 @include link-hover-color;

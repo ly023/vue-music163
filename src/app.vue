@@ -25,7 +25,7 @@
     }
   };
 
-  Vue.component('app', component)
+//  Vue.component('app', component)
 
   export default component
 </script>

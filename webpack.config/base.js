@@ -67,7 +67,12 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        use: 'babel-loader',
+        use: {
+          loader: 'babel-loader',
+          options: {
+            cacheDirectory: true // 开启缓存
+          }
+        },
         exclude: /node_modules\/(?!(fe-vue-[a-zA-Z\-]+)\/).*/
       },
       {
@@ -85,7 +90,7 @@ module.exports = {
       {
         test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
         loader: 'url-loader',
-        query: {
+        options: {
           limit: 8192,
           outputPath: 'fonts/',
           name: '[name].[ext]?[hash:8]',
@@ -105,13 +110,13 @@ module.exports = {
       store: path.join(config.root, 'src/store'),
       utils: path.join(config.root, 'src/utils'),
     },
-    extensions: ['.js', '.vue', '.json'] // 省略后缀名
+    extensions: ['.js', '.vue', '.json'], // 省略后缀名
   },
   plugins: [
     // 提取css，路径相对于输出文件所在的位置
     new ExtractTextPlugin({
       filename: 'css/[name].[contenthash:8].css',
-      // allChunks: true
+      allChunks: true
     }),
     new HtmlWebpackPlugin({
       filename: path.join(config.root, 'dist/index.html'),  // 生成的html存放路径，相对于path
@@ -121,7 +126,8 @@ module.exports = {
       minify: {    // 压缩HTML文件
         removeComments: true,    // 移除HTML中的注释
         collapseWhitespace: false    // 删除空白符与换行符
-      },
+      }
     })
   ]
 };
+

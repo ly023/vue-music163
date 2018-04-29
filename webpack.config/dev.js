@@ -12,14 +12,13 @@ module.exports = merge(baseConfig, {
     publicPath: '/'
   },
   devServer: {
-    historyApiFallback: true, // 404的页面会自动跳转到/页面
     inline: true, // 文件改变自动刷新页面
-    port: config.port,
+    port: config.port
   },
   devtool: 'cheap-module-eval-source-map', // 用于标记编译后的文件与编译前的文件对应位置，便于调试
   plugins: [
     // webpack内置的插件，添加热替换插件，每次改动文件不会再整个页面都刷新
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+
   ]
 });
-

@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="discover-main">
-            <div class="discover-left">
+            <div class="discover-left clearfix">
                 <!--热门推荐-->
                 <div class="discover-hot">
                     <!--title-->
@@ -59,8 +59,12 @@
                     </ul>
                 </div>
             </div>
-            <div class="discover-right">
-
+            <div class="discover-right clearfix">
+                <div class="discover-sign-in">
+                    <p class="discover-sign-in-text">登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+                    <a href="javascript:;" @click="" class="discover-sign-in-btn">用户登录</a>
+                </div>
+                <!---->
             </div>
         </div>
     </div>
@@ -111,6 +115,10 @@
 
     %background-download {
         background: url(~assets/images/discover/download.png) no-repeat 0 0;
+    }
+
+    %background-index {
+        background: url(~assets/images/index.png) no-repeat 0 9999px;
     }
 
     %swiper-button {
@@ -231,6 +239,7 @@
     }
 
     .discover-main {
+
         width: 980px;
         min-height: 700px;
         margin: 0 auto;
@@ -242,6 +251,12 @@
         }
     }
 
+    .discover-left {
+        border-right: 1px solid #d3d3d3;
+        margin-right: 251px;
+
+    }
+
     .discover-hot {
         padding: 20px 20px 40px;
         height: 33px;
@@ -251,7 +266,8 @@
         padding: 0 10px 0 34px;
         height: 33px;
         border-bottom: 2px solid #C10D0C;
-        background: url(~assets/images/index.png) no-repeat -225px -156px;
+        @extend %background-index;
+        background-position: -225px -156px;
         > a {
             font-size: 20px;
             font-weight: normal;
@@ -282,6 +298,40 @@
         position: relative;
 
 
+    }
+
+    .discover-right {
+        float: right;
+        width: 250px;
+        zoom: 1;
+    }
+
+
+    .discover-sign-in {
+        height: 126px;
+        padding-top: 0;
+        @extend %background-index;
+        background-position: 0 0;
+    }
+
+    .discover-sign-in-text {
+        width: 205px;
+        margin: 0 auto;
+        padding: 16px 0;
+        line-height: 22px;
+    }
+
+    .discover-sign-in-btn {
+        display: block;
+        width: 100px;
+        height: 31px;
+        line-height: 31px;
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 1px 0 #8a060b;
+        @extend %background-index;
+        background-position: 0 -195px;
     }
 
 </style>
