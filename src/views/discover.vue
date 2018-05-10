@@ -25,41 +25,49 @@
                 </div>
             </div>
         </div>
-        <div class="discover-main">
-            <div class="discover-left clearfix">
-                <!--热门推荐-->
-                <div class="discover-hot">
-                    <!--title-->
-                    <div class="discover-hot-title">
-                        <router-link class="fl" to="">热门推荐</router-link>
-                        <div class="fl discover-hot-tab">
-                            <router-link to="">华语</router-link>
-                            <span>|</span>
-                            <router-link to="">流行</router-link>
-                            <span>|</span>
-                            <router-link to="">摇滚</router-link>
-                            <span>|</span>
-                            <router-link to="">民谣</router-link>
-                            <span>|</span>
-                            <router-link to="">电子</router-link>
-                        </div>
-                        <router-link to="">更多</router-link>
-                    </div>
-                    <!--cont-->
-                    <ul class="discover-hot-list">
-                        <li class="discover-hot-item">
-                            <div class="discover-hot-cover">
-                                <img src="~assets/images/discover/hot01.jpeg">
-                                <div class="discover-hot-bottom">
-                                    115万
-                                </div>
-                            </div>
-                           <router-link class="discover-hot-des" alt="你是我所有的心动和欢呼雀跃" to="">你是我所有的心动和欢呼雀跃</router-link>
-                        </li>
-                    </ul>
-                </div>
+        <div class="discover-main clearfix">
+            <div class="discover-left-wrapper">
+               <div class="discover-left clearfix">
+                   <!--热门推荐-->
+                   <div class="discover-hot">
+                       <!--title-->
+                       <div class="discover-hot-title">
+                           <router-link class="fl discover-hot-title-text" to="">热门推荐</router-link>
+                           <div class="fl discover-hot-tab">
+                               <router-link to="">华语</router-link>
+                               <span>|</span>
+                               <router-link to="">流行</router-link>
+                               <span>|</span>
+                               <router-link to="">摇滚</router-link>
+                               <span>|</span>
+                               <router-link to="">民谣</router-link>
+                               <span>|</span>
+                               <router-link to="">电子</router-link>
+                           </div>
+                           <router-link class="discover-tab-more" to="">更多<i></i></router-link>
+                       </div>
+                       <!--cont-->
+                       <ul class="discover-hot-list">
+                           <li class="discover-hot-item">
+                               <div class="discover-hot-cover">
+                                   <img src="~assets/images/discover/hot01.jpeg">
+                                   <router-link to="" class="discover-hot-mask"></router-link>
+                                   <div class="discover-hot-bottom">
+                                       <span class="discover-icon-headset fl"></span>
+                                       <span class="discover-play-num">115万</span>
+                                       <span class="discover-icon-play fr"></span>
+                                   </div>
+                               </div>
+                               <p>
+                                   <router-link to="" class="discover-hot-des" alt="你是我所有的心动和欢呼雀跃">你是我所有的心动和欢呼雀跃
+                                   </router-link>
+                               </p>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
             </div>
-            <div class="discover-right clearfix">
+            <div class="discover-right">
                 <div class="discover-sign-in">
                     <p class="discover-sign-in-text">登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
                     <a href="javascript:;" @click="" class="discover-sign-in-btn">用户登录</a>
@@ -119,6 +127,10 @@
 
     %background-index {
         background: url(~assets/images/index.png) no-repeat 0 9999px;
+    }
+
+    %background-cover {
+        background: url(~assets/images/coverall.png) no-repeat;
     }
 
     %swiper-button {
@@ -239,7 +251,6 @@
     }
 
     .discover-main {
-
         width: 980px;
         min-height: 700px;
         margin: 0 auto;
@@ -251,11 +262,17 @@
         }
     }
 
-    .discover-left {
-        border-right: 1px solid #d3d3d3;
-        margin-right: 251px;
-
+    .discover-left-wrapper {
+        float: left;
+        width: 100%;
+        margin-right: -250px;
     }
+
+    .discover-left {
+        margin-right: 251px;
+        border-right: 1px solid #d3d3d3;
+    }
+
 
     .discover-hot {
         padding: 20px 20px 40px;
@@ -268,7 +285,7 @@
         border-bottom: 2px solid #C10D0C;
         @extend %background-index;
         background-position: -225px -156px;
-        > a {
+        .discover-hot-title-text {
             font-size: 20px;
             font-weight: normal;
             line-height: 28px;
@@ -287,20 +304,70 @@
         }
     }
 
+    .discover-tab-more {
+        float: right;
+        margin-top: 9px;
+        color: #666;
+        > i {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin-left: 4px;
+            vertical-align: middle;
+            background-position: 0 -240px;
+            @extend %background-index;
+        }
+    }
+
     .discover-hot-list {
         margin: 20px 0 0 0;
-
-
     }
 
     .discover-hot-item {
         float: left;
         position: relative;
+    }
 
+    .discover-hot-cover {
+        position: relative;
+        width: 140px;
+        height: 140px;
+    }
 
+    .discover-hot-mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-position: 0 0;
+        @extend %background-cover;
+    }
+
+    .discover-hot-bottom {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 27px;
+        background-position: 0 -537px;
+        color: #ccc;
+    }
+
+    .discover-icon-headset {
+        width: 14px;
+        height: 11px;
+        margin: 9px 5px 9px 10px;
+        @extend %background-cover;
+        background-position: 0 -24px;
+    }
+
+    .discover-play-num {
+        margin: 7px 0 0 0;
     }
 
     .discover-right {
+        position: relative;
         float: right;
         width: 250px;
         zoom: 1;
@@ -319,6 +386,7 @@
         margin: 0 auto;
         padding: 16px 0;
         line-height: 22px;
+        color: #666;
     }
 
     .discover-sign-in-btn {

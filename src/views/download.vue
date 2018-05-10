@@ -4,11 +4,11 @@
             <div class="download-banner-wrapper">
                 <div class="fl download-swiper">
                     <swiper :options="swiperOption" ref="downloadSwiper">
-                        <swiper-slide class="download-banner-item"><img src="src/~assets/images/download/banner-aos.png">
+                        <swiper-slide class="download-banner-item"><img src="~assets/images/download/banner-aos.png">
                         </swiper-slide>
-                        <swiper-slide class="download-banner-item"><img src="src/~assets/images/download/banner-ios.png">
+                        <swiper-slide class="download-banner-item"><img src="~assets/images/download/banner-ios.png">
                         </swiper-slide>
-                        <swiper-slide class="download-banner-item"><img src="src/~assets/images/download/banner-pc.png">
+                        <swiper-slide class="download-banner-item"><img src="~assets/images/download/banner-pc.png">
                         </swiper-slide>
                         <!-- Optional controls -->
                         <div class="swiper-pagination download-swiper-pagination" slot="pagination"></div>

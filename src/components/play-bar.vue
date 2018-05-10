@@ -417,7 +417,7 @@
         &:hover {
             text-decoration: underline;
         }
-    },
+    }
 
     .play-bar-song-name {
         max-width: 300px;
