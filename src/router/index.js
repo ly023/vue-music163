@@ -10,7 +10,7 @@ Vue.use(Router);
 
 const router = new Router({
   routes,
-  // history: true,    // 开启html5history模式
+  mode: 'history' // html5 history模式
   // linkActiveClass: 'active' // v-link激活时添加的class，默认是`v-link-active`
 });
 
