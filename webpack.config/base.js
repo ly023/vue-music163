@@ -9,7 +9,7 @@ const config = require("./config");
 module.exports = {
     context: config.root, // 绝对路径，webpack 编译时的基础目录，entry 会相对于此目录查找
     entry: {
-        main: './src/main.js', // 入口文件路径
+        main: ['babel-polyfill', './src/main.js'], // 入口文件路径
         vendors: ['vue', 'vue-router', 'vuex', 'axios']  // 需要被提取为公共模块的群组
     },
     module: { // 配置loader

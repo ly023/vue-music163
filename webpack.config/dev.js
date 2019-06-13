@@ -13,7 +13,8 @@ module.exports = merge(baseConfig, {
   },
   devServer: {
     inline: true, // 文件改变自动刷新页面
-    port: config.port
+    port: config.port,
+    historyApiFallback: true,
   },
   devtool: 'cheap-module-eval-source-map', // 用于标记编译后的文件与编译前的文件对应位置，便于调试
   plugins: [
